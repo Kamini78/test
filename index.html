@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440px, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <div class="container">
+            <h1>I'm <span>Rayan Adlrdard</span> <br> Front-end Developer</h1>
+            <p>Bringing ideas to life through clean and efficient code.</p>
+            <button class="hire-me">HIRE ME</button>
+            <div class="home-image">
+                <img src="images/profile.png" alt="Developer Portrait">
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & MODAL -->
+    <section id="skills">
+        <h2>Skills & Languages</h2>
+        <button id="add-skill">Add Skill</button>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Add Skill</h2>
+            <input type="text" placeholder="Skill Name">
+            <div class="modal-actions">
+                <button id="close-modal">Cancel</button>
+                <button id="save-skill">Add Skill</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Project 1">
+                <p>Project 1 Description</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.png" alt="Project 2">
+                <p>Project 2 Description</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECOMMENDATIONS (CAROUSEL) -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="images/recommendation1.png" alt="Recommendation 1">
+                    <p>"Great work!"</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/recommendation2.png" alt="Recommendation 2">
+                    <p>"Impressive skills!"</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/recommendation3.png" alt="Recommendation 3">
+                    <p>"Reliable developer!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Portfolio Page. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
